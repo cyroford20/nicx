@@ -1,0 +1,164 @@
+/* Mobile-First Android Phone Optimization */
+
+/* Small phones (up to 500px) */
+@media (max-width: 500px) {
+  html {
+    font-size: 15px;
+  }
+
+  .page-shell {
+    padding: 12px 12px 50px;
+  }
+
+  h1 {
+    font-size: clamp(2.6rem, 13vw, 3.6rem);
+  }
+
+  .slide-stage,
+  .slide-stage img {
+    min-height: 55vw;
+    height: 55vw;
+  }
+
+  .lily-mosaic {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Landscape orientation */
+@media (max-width: 760px) and (orientation: landscape) {
+  .page-shell {
+    padding: 10px 12px 24px;
+  }
+
+  .hero {
+    gap: 8px;
+    padding-bottom: 8px;
+  }
+
+  .slide-stage,
+  .slide-stage img {
+    min-height: 65vh;
+    height: 65vh;
+  }
+}
+
+/* Touch-friendly mobile interface */
+@media (hover: none) and (pointer: coarse) {
+  .primary-btn,
+  .secondary-btn,
+  .slide-btn {
+    min-height: 48px;
+  }
+
+  button {
+    -webkit-tap-highlight-color: rgba(49, 201, 255, 0.2);
+  }
+
+  button:active {
+    transform: scale(0.96);
+  }
+
+  .thumb {
+    min-height: 80px;
+  }
+}
+
+/* Safe area support for notched devices */
+@supports (padding: max(0px)) {
+  .page-shell {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-bottom: max(50px, env(safe-area-inset-bottom));
+  }
+
+  .slide-thumbs {
+    padding-right: max(2px, env(safe-area-inset-right));
+    padding-left: max(2px, env(safe-area-inset-left));
+  }
+}
+
+/* Accessibility: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .floating-petals span,
+  .confetti-piece {
+    animation: none !important;
+    opacity: 0.3;
+  }
+
+  .candles span::before {
+    animation: none !important;
+  }
+
+  .slide-stage img,
+  button,
+  .reveal-card {
+    transition: none !important;
+  }
+}
+
+/* High contrast support */
+@media (prefers-contrast: more) {
+  .primary-btn {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+  }
+
+  button {
+    border-width: 2px;
+  }
+}
+
+/* Very small phones (< 360px) */
+@media (max-width: 360px) {
+  h1 {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  .subtitle,
+  .gallery-intro p,
+  .section-heading p {
+    font-size: 0.93rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Prevent horizontal scroll */
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Optimize images for mobile */
+img {
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optimize text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Faster tap response */
+a,
+button {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Better touch scrolling */
+.slide-thumbs {
+  -webkit-overflow-scrolling: touch;
+}

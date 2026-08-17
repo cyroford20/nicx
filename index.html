@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081117" />
+    <title>Happy Birthday, My Loveee</title>
+    <meta
+      name="description"
+      content="A romantic birthday website with blue lilies"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <div class="floating-petals" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="badge">For the girl who makes life bloom</div>
+          <h1>Happy Birthday, <span>My Love</span></h1>
+          <p class="subtitle">
+            You are the sweetest part of my world, my happiness, my calm, and my
+            favorite reason to smile. Today is all about you and the beautiful love
+            you bring into my life.
+          </p>
+
+          <div class="cta-row">
+            <button class="primary-btn" id="openLetter">Open My Letter</button>
+            <button class="secondary-btn" id="fireworksBtn">Make It Sparkle</button>
+          </div>
+        </div>
+
+        <div class="hero-flower">
+          <img class="hero-main" src="design/lily1.jpg" alt="Blue lily in bloom" />
+          <div class="hero-pair" aria-hidden="true">
+            <img src="design/lily2.jpeg" alt="" />
+            <img src="design/lily6.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="lily-gallery" aria-label="Blue lily gallery">
+        <div class="gallery-intro">
+          <p class="eyebrow">Blue lilies for your day</p>
+          <h2>A garden made just for you</h2>
+          <p>
+            Soft petals, bright blues, and a little midnight magic for the woman who
+            makes every ordinary day feel beautiful.
+          </p>
+        </div>
+
+        <div class="lily-mosaic">
+          <figure class="tile tile-wide">
+            <img src="design/lily3.jpg" alt="Cluster of blue lilies" />
+          </figure>
+          <figure class="tile">
+            <img src="design/lily4.jpg" alt="Blue lilies in a garden" />
+          </figure>
+          <figure class="tile tile-tall">
+            <img src="design/lily7.webp" alt="Tall blue lily stems" />
+          </figure>
+          <figure class="tile tile-large">
+            <img src="design/lily5.jpg" alt="White and blue lilies in a vase" />
+          </figure>
+          <figure class="tile">
+            <img src="design/lily8.jpg" alt="Two blue lilies on a dark background" />
+          </figure>
+          <figure class="tile">
+            <img src="design/lily9.jpg" alt="Glowing blue lily bouquet" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="photo-story" aria-label="Favorite photos">
+        <div class="section-heading">
+          <p class="eyebrow">All my favorite views of you</p>
+          <h2>Every picture, another reason to smile</h2>
+          <p>
+            A little gallery of you: soft smiles, sweet poses, tiny moods, and the
+            beautiful moments I never get tired of looking at.
+          </p>
+        </div>
+
+        <div class="photo-slideshow" id="photoSlideshow">
+          <figure class="slide-stage">
+            <img
+              id="slideImage"
+              src="photos/pic1.jpg"
+              alt="Favorite portrait in pink"
+            />
+            <figcaption>
+              <span id="slideTitle">Favorite portrait in pink</span>
+              <span id="slideCounter">01 / 23</span>
+            </figcaption>
+            <button class="slide-btn slide-prev" id="prevSlide" aria-label="Previous photo">&#8249;</button>
+            <button class="slide-btn slide-next" id="nextSlide" aria-label="Next photo">&#8250;</button>
+          </figure>
+
+          <div class="slide-thumbs" aria-label="Choose a photo">
+            <button class="thumb is-active" type="button" data-src="photos/pic1.jpg" data-alt="Favorite portrait in pink" aria-label="Show photo 1">
+              <img src="photos/pic1.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic2.jpg" data-alt="Cute serious selfie" aria-label="Show photo 2">
+              <img src="photos/pic2.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic3.jpg" data-alt="Selfie with glasses" aria-label="Show photo 3">
+              <img src="photos/pic3.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic4.jpg" data-alt="Portrait with glasses" aria-label="Show photo 4">
+              <img src="photos/pic4.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic5.jpg" data-alt="Soft portrait by the doorway" aria-label="Show photo 5">
+              <img src="photos/pic5.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic6.jpg" data-alt="Dreamy portrait in pink" aria-label="Show photo 6">
+              <img src="photos/pic6.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic7.jpg" data-alt="Pose in pink top" aria-label="Show photo 7">
+              <img src="photos/pic7.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic8.jpg" data-alt="Portrait with sunglasses on head" aria-label="Show photo 8">
+              <img src="photos/pic8.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic9.jpg" data-alt="Sweet selfie in pink" aria-label="Show photo 9">
+              <img src="photos/pic9.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic10.jpg" data-alt="Holding a blue plush" aria-label="Show photo 10">
+              <img src="photos/pic10.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic11.jpg" data-alt="Portrait with blue plush" aria-label="Show photo 11">
+              <img src="photos/pic11.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic12.jpg" data-alt="Smiling with blue plush" aria-label="Show photo 12">
+              <img src="photos/pic12.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic13.jpg" data-alt="Standing with blue plush" aria-label="Show photo 13">
+              <img src="photos/pic13.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic14.jpg" data-alt="Blowing a kiss" aria-label="Show photo 14">
+              <img src="photos/pic14.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic15.jpg" data-alt="Reading a book" aria-label="Show photo 15">
+              <img src="photos/pic15.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic16.jpg" data-alt="Reading while standing" aria-label="Show photo 16">
+              <img src="photos/pic16.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic17.jpg" data-alt="Playful book pose" aria-label="Show photo 17">
+              <img src="photos/pic17.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic18.jpg" data-alt="Black and white book portrait" aria-label="Show photo 18">
+              <img src="photos/pic18.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic19.jpg" data-alt="Black and white reading portrait" aria-label="Show photo 19">
+              <img src="photos/pic19.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic20.jpg" data-alt="Smiling portrait in white" aria-label="Show photo 20">
+              <img src="photos/pic20.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic21.jpg" data-alt="Relaxed smiling selfie" aria-label="Show photo 21">
+              <img src="photos/pic21.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic22.jpg" data-alt="Peace sign selfie" aria-label="Show photo 22">
+              <img src="photos/pic22.jpg" alt="" />
+            </button>
+            <button class="thumb" type="button" data-src="photos/pic23.jpg" data-alt="Soft smile portrait" aria-label="Show photo 23">
+              <img src="photos/pic23.jpg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="birthday-cake" aria-label="Birthday cake with 21 candles">
+        <div class="section-heading">
+          <p class="eyebrow">21 candles for your 21st</p>
+          <h2>A wish made just for her</h2>
+          <p>
+            Twenty-one little lights for twenty-one beautiful years, and one big wish
+            for all the happiness your heart can hold.
+          </p>
+        </div>
+
+        <div class="cake-scene" aria-hidden="true">
+          <div class="candles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="cake">
+            <div class="cake-top">21</div>
+            <div class="cake-layer cake-layer-one"></div>
+            <div class="cake-layer cake-layer-two"></div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card reveal-card" id="letterCard">
+        <div class="card-header">A little note from your man</div>
+        <p>
+          My love, every moment with you feels like a blessing. You make my heart feel
+          full, my days brighter, and my dreams softer. Your smile is my peace, your
+          laughter is my joy, and your presence is the kind of happiness I never want
+          to be without.
+        </p>
+        <p>
+          I hope this birthday brings you endless happiness, quiet peace, and all the
+          love your heart can hold. You deserve every beautiful thing in this world,
+          and I will always be grateful to be the one who gets to love you.
+        </p>
+        <p class="signature">Forever and always, &hearts;</p>
+      </section>
+
+      <section class="reasons">
+        <h2>Why I Love You</h2>
+        <div class="reason-grid">
+          <article class="reason">
+            <span class="icon">&#10022;</span>
+            <h3>Your smile</h3>
+            <p>It makes even ordinary days feel magical.</p>
+          </article>
+          <article class="reason">
+            <span class="icon">&hearts;</span>
+            <h3>Your heart</h3>
+            <p>It is gentle, warm, and more beautiful than words.</p>
+          </article>
+          <article class="reason">
+            <span class="icon">&#9728;</span>
+            <h3>Your presence</h3>
+            <p>With you, life feels softer, brighter, and full of love.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="promise">
+        <h2>My Promise</h2>
+        <p>
+          I promise to cherish you, support you, and love you with all my heart in every
+          season of life. Today and always, you are my favorite person and my forever.
+        </p>
+      </section>
+
+      <section class="footer-message">
+        <p>Happy Birthday, my loveee. You are my favorite smile, my sweetest dream, and my greatest blessing.</p>
+      </section>
+    </main>
+
+    <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
