@@ -748,13 +748,17 @@ button:hover {
   max-width: 840px;
   margin: 42px auto 0;
   padding: 28px 24px;
-  opacity: 0.18;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transform: translateY(12px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
 }
 
 .reveal-card.visible {
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   transform: translateY(0);
 }
 

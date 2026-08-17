@@ -16,8 +16,14 @@ let slideTimer;
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (openLetterBtn && letterCard) {
+  openLetterBtn.setAttribute("aria-expanded", "false");
+
   openLetterBtn.addEventListener("click", () => {
-    letterCard.classList.add("visible");
+    if (!letterCard.classList.contains("visible")) {
+      letterCard.classList.add("visible");
+      openLetterBtn.setAttribute("aria-expanded", "true");
+      openLetterBtn.textContent = "Letter Opened";
+    }
   });
 }
 
@@ -130,10 +136,5 @@ function launchConfetti() {
   }
 }
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    if (letterCard) {
-      letterCard.classList.add("visible");
-    }
-  }, 300);
-});
+
+
