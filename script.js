@@ -18,7 +18,6 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 if (openLetterBtn && letterCard) {
   openLetterBtn.addEventListener("click", () => {
     letterCard.classList.add("visible");
-    letterCard.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 }
 
@@ -74,7 +73,6 @@ function showSlide(index, animate = true) {
 
     thumbs.forEach((thumb) => thumb.classList.remove("is-active"));
     selectedThumb.classList.add("is-active");
-    selectedThumb.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   };
 
   if (!animate || reduceMotion) {
